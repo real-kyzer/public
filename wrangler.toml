@@ -27,9 +27,9 @@ pages_build_output_dir = ".vercel/output/static"
 # Bind a D1 database. D1 is Cloudflare’s native serverless SQL database.
 # Docs: https://developers.cloudflare.com/pages/functions/bindings/#d1-databases
 [[d1_databases]]
-binding = "DB"                                       # i.e. available in your Worker on env.DB
-database_name = "r2-db"
-database_id = "0d93b93e-18e1-464a-b2fd-3d3ab34a48c7"
+binding = "DB"             # i.e. available in your Worker on env.DB
+database_name = "public"
+database_id = ""
 migrations_dir = "drizzle"
 
 # Bind a Durable Object. Durable objects are a scale-to-zero compute primitive based on the actor model.
@@ -82,14 +82,14 @@ migrations_dir = "drizzle"
 # [[env.preview.d1_databases]]
 # binding = "DB"                                       # i.e. available in your Worker on env.DB
 # database_name = "public-preview"
-# database_id = "9ba874c7-30f8-436c-a357-2b674e0a2e79"
+# database_id = ""
 
 # [[env.preview.r2_buckets]]
 # binding = "R2"
 # bucket_name = "public-preview"
 
 # [env.preview.vars]
-# BASE_URL = "https://public.bendigo.dev/"
+# BASE_URL = ""
 
 
 ######## PRODUCTION environment config ########
@@ -104,11 +104,11 @@ migrations_dir = "drizzle"
 # [[env.production.d1_databases]]
 # binding = "DB"                                       # i.e. available in your Worker on env.DB
 # database_name = "public"
-# database_id = "ba9a1809-c641-4ae9-88b9-e937bb085b42"
+# database_id = ""
 
 # [[env.production.r2_buckets]]
 # binding = "R2"
 # bucket_name = "public"
 
 # [env.production.vars]
-# BASE_URL = "https://public.bendigo.vic.gov.au/"
+# BASE_URL = ""
