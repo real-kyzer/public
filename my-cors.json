@@ -1,0 +1,46 @@
+[
+  {
+    "AllowedOrigins": [
+      "http://localhost:3000"
+    ],
+    "AllowedMethods": [
+      "GET",
+      "PUT",
+      "POST",
+      "HEAD",
+      "DELETE"
+    ],
+    "AllowedHeaders": [
+      "Access-Control-Allow-Origin",
+      "acl",
+      "Content-Length",
+      "Content-Disposition",
+      "Content-Encoding",
+      "Content-Type",
+      "Expires",
+      "bucket",
+      "Accept",
+      "Accept-Encoding",
+      "Accept-Language",
+      "Cache-Control",
+      "Connection",
+      "Host",
+      "Origin",
+      "Pragma",
+      "Referer",
+      "Sec-Ch-Ua",
+      "Sec-Ch-Ua-Mobile",
+      "Sec-Ch-Ua-Platform",
+      "Sec-Fetch-Dest",
+      "Sec-Fetch-Mode",
+      "Sec-Fetch-Site",
+      "User-Agent",
+      "x-amz-meta-info"
+    ],
+    "ExposeHeaders": [
+      "ETag",
+      "Location"
+    ],
+    "MaxAgeSeconds": 3000
+  }
+]
